@@ -4,7 +4,7 @@ import App from "./App";
 
 
 import "./styles/global.css";
-import "./app.css";
+import "./App.css";
 import "./styles/components.css";
 import "./styles/pages.css";
 
