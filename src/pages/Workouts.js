@@ -5,8 +5,6 @@ const Workouts = () => {
     <div className="workouts">
       <h1 className="workouts-title">💪 Workouts & Fitness Plans</h1>
       <p className="workouts-desc">Stay fit with structured workout plans and challenges.</p>
-
-      {/* Workout Categories (Animated Cards) */}
       <div className="workout-cards">
         {["Cardio", "Strength", "Yoga", "HIIT"].map((type, index) => (
           <div key={index} className="workout-card">
@@ -16,7 +14,6 @@ const Workouts = () => {
         ))}
       </div>
 
-      {/* Workout Plans Table */}
       <div className="workout-table">
         <h2>📅 Weekly Workout Plans</h2>
         <table>

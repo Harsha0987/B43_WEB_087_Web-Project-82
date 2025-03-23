@@ -3,20 +3,19 @@ import React from "react";
 const Challenges = () => {
   return (
     <div className="challenges">
-      {/* Title Section */}
       <header className="challenges-header">
         <h1>🔥 Fitness Challenges</h1>
         <p>Take on a challenge and push yourself beyond limits!</p>
       </header>
 
-      {/* Featured Challenge Section */}
+   
       <section className="featured-challenge">
         <h2>🏆 Featured Challenge: The Ultimate 30-Day Stamina Test</h2>
         <p>Boost your endurance and strength with a 30-day guided challenge.</p>
         <button className="join-btn">Join Now</button>
       </section>
 
-      {/* Challenge List Section */}
+   
       <section className="challenge-list">
         <h2>💪 Popular Challenges</h2>
         <ul>
@@ -28,7 +27,6 @@ const Challenges = () => {
         </ul>
       </section>
 
-      {/* Leaderboard Table Section */}
       <section className="leaderboard">
         <h2>🏅 Challenge Leaderboard</h2>
         <table>

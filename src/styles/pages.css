@@ -1,7 +1,7 @@
-/* ====== General Page Styles ====== */
+
 .page {
-    padding: 80px; /* Increased padding */
-    min-height: 120vh; /* Increased height */
+    padding: 80px; 
+    min-height: 120vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,10 +10,10 @@
     background: linear-gradient(135deg, #1e1e1e, #333333);
     color: white;
     animation: fadeIn 1.2s ease-in-out;
-    gap: 50px; /* Adds spacing between content */
+    gap: 50px;
 }
 
-/* Animation for Page Load */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -26,7 +26,7 @@
 }
 
 
-/* ====== Home Page Styles ====== */
+
 .home {
     background: url('../assets/home-bg.jpg') no-repeat center center/cover;
     animation: zoomIn 1.5s ease-in-out;
@@ -34,27 +34,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px; /* Equal gap between sections */
+    gap: 50px; 
     min-height: 100px;
     padding: 50px 250px;
     margin-bottom: -10px;
     
 }
 
-/* Hero Section */
+
 .hero, 
 .featured-workouts, 
 .cta {
     text-align: center;
-    width: 80%; /* Adjusted width for consistency */
-    background: rgba(255, 255, 255, 0.2); /* Light background overlay */
+    width: 80%; 
+    background: rgba(255, 255, 255, 0.2); 
     padding: 5px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
 
-/* Headings */
+
 .home h1, .home h2 {
     font-size: 40px;
     font-weight: bold;
@@ -68,7 +68,7 @@
     color: tomato;
 }
 
-/* Buttons */
+
 .home button {
     padding: 15px 30px;
     font-size: 18px;
@@ -107,19 +107,19 @@
     left: 100%;
 }
 
-/* Depth Effect on Click */
+
 .home button:active {
     transform: scale(0.95);
     box-shadow: 0px 4px 8px rgba(255, 153, 0, 0.6);
 }
 
-/* Border Glow on Hover */
+
 .home button:hover {
     border: 2px solid #ffffff40;
     box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7);
 }
 
-/* Pulse Animation for CTA */
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -130,7 +130,7 @@
     animation: pulse 2s infinite;
 }
 
-/* Ripple Effect on Click */
+
 .home button:active::after {
     content: "";
     position: absolute;
@@ -145,7 +145,7 @@
     transition: all 0.6s ease-out;
 }
 
-/* Workout List */
+
 .workout-list {
     display: flex;
     justify-content: center;
@@ -169,10 +169,10 @@
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .home {
-        gap: 50px; /* Reduced gap for smaller screens */
+        gap: 50px; 
     }
     
     .hero, .featured-workouts, .cta {
@@ -187,7 +187,6 @@
 
 
 /* ====== Dashboard Page ====== */
-/* ======= Dashboard Page ======= */
 .dashboard {
     min-height: 100vh;
     display: flex;
@@ -199,7 +198,7 @@
     background: url("https://source.unsplash.com/1600x900/?fitness,gym") no-repeat center center/cover;
 }
 
-/* Glassmorphism Effect */
+
 .profile-card, .stats-container, .goals, .achievements {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
@@ -216,7 +215,7 @@
     
 }
 
-/* Profile Section */
+
 .profile-card img {
     width: 100px;
     height: 100px;
@@ -230,7 +229,7 @@
     color: rgb(41, 17, 126);
 }
 
-/* Stats Section */
+
 .stats-container {
     display: flex;
     flex-direction: column;
@@ -246,7 +245,7 @@
     color: rgb(41, 17, 126);
 }
 
-/* Goals Section */
+
 .goals ul {
     list-style: none;
     padding: 0;
@@ -263,7 +262,7 @@
     transform: scale(1.1);
 }
 
-/* Achievements Section */
+
 .achievement-card {
     padding: 15px;
     background: rgba(255, 204, 0, 0.2);
@@ -279,7 +278,7 @@
     transform: translateY(-5px);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -297,7 +296,6 @@
 
 
 /* ====== Workouts Page ====== */
-/* Workouts Page Styling */
 .workouts {
     padding: 50px;
     min-height: 100vh;
@@ -306,7 +304,7 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Title Styling */
+
 .workouts-title {
     font-size: 2.8rem;
     font-weight: bold;
@@ -326,7 +324,7 @@
     }
 }
 
-/* Workout Cards */
+
 .workout-cards {
     display: flex;
     justify-content: center;
@@ -349,7 +347,7 @@
     box-shadow: 0px 4px 15px rgba(255, 69, 0, 0.8);
 }
 
-/* Workout Graph */
+
 .workout-graph {
     margin: 40px auto;
     width: 80%;
@@ -371,7 +369,7 @@
     }
 }
 
-/* Workout Table */
+
 /* ===== Workouts Page ===== */
 .workouts {
     padding: 50px;
@@ -383,7 +381,7 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Title */
+
 .workouts-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -392,7 +390,7 @@
     animation: popIn 1s ease-in-out;
 }
 
-/* Animated Workout Cards */
+
 .workout-cards {
     display: flex;
     justify-content: center;
@@ -401,7 +399,7 @@
 }
 
 .workout-card {
-    background: rgba(255, 255, 255, 0.15); /* Glass Effect */
+    background: rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
@@ -417,7 +415,7 @@
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Workout Table (Glass Effect) */
+
 .workout-table {
     width: 70%;
     margin: 30px auto;
@@ -428,7 +426,7 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Glass Effect */
+    background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(12px);
     border-radius: 12px;
     overflow: hidden;
@@ -445,12 +443,12 @@
     color: white;
 }
 
-/* Hover effect */
+
 .workout-table tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ===== Animations ===== */
+
 @keyframes popIn {
     from {
         opacity: 0;
@@ -495,7 +493,7 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Header */
+
 .challenges-header {
     animation: slideInTop 1s ease-in-out;
 }
@@ -507,7 +505,7 @@
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Featured Challenge */
+
 .featured-challenge {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(12px);
@@ -534,7 +532,7 @@
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Challenge List */
+
 .challenge-list {
     margin: 30px 0;
     animation: fadeInUp 1s ease-in-out;
@@ -564,7 +562,7 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Leaderboard */
+
 .leaderboard {
     margin-top: 50px;
     animation: zoomIn 1s ease-in-out;
@@ -654,7 +652,7 @@
     animation: fadeInScale 1.2s ease-in-out;
 }
 
-/* Page Header */
+
 .community-header h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -668,7 +666,7 @@
     text-shadow: 2px 2px 8px rgb(20, 20, 20);
 }
 
-/* Posts Feed */
+
 .posts {
     margin: 30px 0;
     animation: slideFromLeft 1.2s ease-in-out;
@@ -694,7 +692,7 @@
     transform: scale(1.05);
 }
 
-/* Top Contributors */
+
 .top-contributors {
     margin-top: 40px;
     animation: fadeInZoom 1.2s ease-in-out;
@@ -716,7 +714,7 @@
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Join Challenges CTA */
+
 .join-challenge {
     margin-top: 50px;
     animation: bounceIn 1.5s ease-in-out;
@@ -739,7 +737,7 @@
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Chat Preview */
+
 .chat-preview {
     margin-top: 40px;
     padding: 20px;
@@ -806,7 +804,6 @@
 }
 
 /* ===== Profile Page Styles ===== */
-/* General Container */
 .profile-container {
     padding: 40px;
     text-align: center;
@@ -814,23 +811,22 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Header */
+
 .profile-header {
     margin-bottom: 40px;
     color: #ffcc00;
     text-shadow: 2px 2px 8px rgb(12, 12, 12);
 }
 
-/* Grid Layout */
+
 .profile-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 25px; /* Space between grid items */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; 
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* Glassmorphism Effect for Sections */
 .profile-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -842,13 +838,13 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover Effect */
+
 .profile-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
 }
 
-/* Progress Bar */
+
 .progress-bar-container {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
@@ -867,7 +863,7 @@
     transition: width 0.4s ease-in-out;
 }
 
-/* Buttons */
+
 button {
     margin-top: 10px;
     padding: 12px;
@@ -908,7 +904,7 @@ button {
     box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.8);
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

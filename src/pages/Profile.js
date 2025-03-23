@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Profile = () => {
   const [goal, setGoal] = useState("Lose 5kg");
-  const [progress, setProgress] = useState(45); // Initially 45%
+  const [progress, setProgress] = useState(45); 
 
   return (
     <div className="profile-container">
@@ -13,15 +13,12 @@ const Profile = () => {
       </div>
 
       <div className="profile-grid">
-        {/* Personal Info */}
         <div className="profile-card">
           <h2>👤 Personal Info</h2>
           <p><strong>Name:</strong> John Doe</p>
           <p><strong>Email:</strong> johndoe@example.com</p>
           <p><strong>Fitness Goal:</strong> {goal}</p>
         </div>
-
-        {/* Progress */}
         <div className="profile-card">
           <h2>📊 Progress</h2>
           <div className="progress-bar-container">
@@ -31,8 +28,6 @@ const Profile = () => {
           </div>
           <button className="goal-btn" onClick={() => setProgress(progress + 5)}>Increase Progress</button>
         </div>
-
-        {/* Achievements */}
         <div className="profile-card">
           <h2>🏆 Achievements</h2>
           <ul>
@@ -41,8 +36,6 @@ const Profile = () => {
             <li>✅ Tracked Workouts for 30 Days</li>
           </ul>
         </div>
-
-        {/* Settings */}
         <div className="profile-card">
           <h2>⚙️ Settings</h2>
           <button className="edit-btn">Edit Profile</button>
