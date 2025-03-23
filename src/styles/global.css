@@ -1,0 +1,97 @@
+/* ======= Reset Styles for Consistency ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ======= Root Variables for Theme ======= */
+:root {
+    --primary-color: #ff5733;
+    --secondary-color: #222;
+    --text-color: #fff;
+    --background-color: #121212;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* ======= Global Body Styling ======= */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* ======= Smooth Fade-In Animation ======= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in to all elements */
+body * {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ======= Button Styles ======= */
+button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all var(--transition-speed) ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.3);
+}
+
+button:hover {
+    background: #e44d26;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 87, 51, 0.4);
+}
+
+/* ======= Smooth Scrollbar (Pro Look) ======= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e44d26;
+}
+
+/* ======= Card Design (For Future Components) ======= */
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
